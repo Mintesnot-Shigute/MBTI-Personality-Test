@@ -8,7 +8,7 @@ def create_connection():
     cursor = conn.cursor()
     return conn, cursor
 
-# Create a table to store user data if it doesn't exist
+
 def create_table():
     conn, cursor = create_connection()
     cursor.execute('''
