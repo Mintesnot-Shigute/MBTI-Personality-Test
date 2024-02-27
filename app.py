@@ -37,7 +37,7 @@ def get_users_data():
     conn = sqlite3.connect('user_data.db')  # Replace with your database name
     cursor = conn.cursor()
 
-    # Execute a query to fetch all users
+    
     cursor.execute("SELECT name, email FROM users")  # Replace 'users' with your table name
     existing_users = cursor.fetchall()
 
@@ -297,4 +297,4 @@ def home():
     return render_template('welcome.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0",port=5000)
