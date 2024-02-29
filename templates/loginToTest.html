@@ -52,7 +52,7 @@
             .then(response => response.json())
             .then(data => {
                 if (data.exists) {
-                    // Successful login, redirect to quiz page or perform desired action
+               
                     window.location.href = '/login';
                 } else {
                     alert('User does not exist. Please register first.');
