@@ -95,6 +95,7 @@ def admin():
 @app.route('/loginToTest')
 def loginToTest():
     return render_template('loginToTest.html')
+    
 
 @app.route('/login')
 def login():
@@ -118,8 +119,6 @@ def register():
         conn.close()
     # Process registration form data if needed
     return redirect(url_for('success'))
-
-
 @app.route('/success')
 def success():
     return render_template('success.html')
