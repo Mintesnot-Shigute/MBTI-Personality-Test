@@ -38,7 +38,7 @@ def get_users_data():
     cursor = conn.cursor()
 
     
-    cursor.execute("SELECT name, email FROM users")  # Replace 'use
+    cursor.execute("SELECT name, email FROM users")  # Replace 
     existing_users = cursor.fetchall()
 
     conn.close()
