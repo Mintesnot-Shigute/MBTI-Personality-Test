@@ -34,7 +34,7 @@ def create_table():
 
 @app.route('/get_users_data')
 def get_users_data():
-    conn = sqlite3.connect('user_data.db')  # Replace with your datab
+    conn = sqlite3.connect('user_data.db')  # Replace with your 
     cursor = conn.cursor()
 
 
