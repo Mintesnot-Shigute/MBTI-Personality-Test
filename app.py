@@ -37,8 +37,8 @@ def get_users_data():
     conn = sqlite3.connect('user_data.db')  # Replace with your database name
     cursor = conn.cursor()
 
-    
-    cursor.execute("SELECT name, email FROM users")  # Re
+
+    cursor.execute("SELECT name, email FROM users")  # 
     existing_users = cursor.fetchall()
 
     conn.close()
