@@ -1,7 +1,7 @@
 # This is a sample Python script.
 
 # Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, 
+# Press Double Shift to search everywhere for class
 
 
 def print_hi(name):
