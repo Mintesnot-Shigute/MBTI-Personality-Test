@@ -51,7 +51,7 @@ def check_credentials():
     data = request.get_json()
     name = data.get('name')
     email = data.get('email')
-    conn = sqlite3.connect('user_data.db')  # Replace with your dat
+    conn = sqlite3.connect('user_data.db')  # Replace with your da
     cursor = conn.cursor()
 
     cursor.execute("SELECT * FROM users WHERE name = ? AND email = ?", (name, email))
